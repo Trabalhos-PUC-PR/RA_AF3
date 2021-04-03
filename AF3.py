@@ -52,5 +52,5 @@ else:
         Valor_D = False
         Valor_E = False
         print("Os valores são os seguintes: ", Valor_A,Valor_B,Valor_C,Valor_D,Valor_E)
-        Valor_Final = not((Valor_A or Valor_B) and (Valor_D and Valor_C) or Valor_E)
+        Valor_Final = (Valor_A or Valor_B) and (Valor_D and Valor_C) or not Valor_E
         print("Após a expressão '(Valor_A ou Valor_B) e (Valor_D e Valor_C) ou não Valor_E', o resultado é: ",Valor_Final)
